@@ -5,5 +5,6 @@ This is a collection of MapReduce examples that make use of two patent data file
 
 
 The following datasets are used:
-http://www.nber.org/patents/acite75_99.zip
-http://www.nber.org/patents/apat63_99.zip 
+
+ *  http://www.nber.org/patents/acite75_99.zip
+ *  http://www.nber.org/patents/apat63_99.zip 
