@@ -22,14 +22,11 @@ import org.apache.hadoop.mapred.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-import com.erj.practice.hadoop.patent.citations.CleanCitations.ImTheMap;
-import com.erj.practice.hadoop.patent.citations.CleanCitations.Reducto;
-
-
 /*
  * This MapReduce job counts the number of citations a particular patent makes.  It outputs a patent number and the number of patents that it cites from cite75_99
  * 
  */
+@SuppressWarnings("deprecation")
 public class CiteCount extends Configured implements Tool{
 	public static class ImTheMap extends MapReduceBase implements Mapper<Text, Text, Text, IntWritable> {
 		public void map(Text key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {

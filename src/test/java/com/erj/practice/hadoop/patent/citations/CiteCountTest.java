@@ -1,7 +1,9 @@
 package com.erj.practice.hadoop.patent.citations;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,7 +16,6 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 
 public class CiteCountTest {
